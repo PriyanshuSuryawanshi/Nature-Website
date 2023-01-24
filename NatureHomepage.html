@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Forum&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Nature_img/logo-green.svg">
+    <title>Nature</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        ::selection {
+            background-color: #ffd936;
+            color: #000;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+
+        .main {
+            background-image: url(./Nature_img/header-hero.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 100px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .main::after {
+            position: absolute;
+            content: "";
+            z-index: -1;
+            background-color: #000;
+            opacity: 0.2;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .main h1 {
+            font-size: 117px;
+            font-weight: 400;
+            letter-spacing: -3px;
+            margin: 0;
+        }
+
+        .main h2 {
+            margin: 0;
+            padding-top: 200px;
+            font-size: 50px;
+            text-transform: lowercase;
+            font-weight: 400;
+            line-height: 0.2;
+        }
+
+        .logo img {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        .main p {
+            max-width: 320px;
+            margin: 0 auto;
+            padding-bottom: 50px;
+        }
+
+        .navigation {
+            position: relative;
+        }
+
+        .nav ul {
+            position: absolute;
+            right: 0;
+            margin-top: 30px;
+        }
+
+        .nav ul li {
+            display: inline-block;
+
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 50px;
+        }
+
+        .number {
+            border: 1px solid #fff;
+            border-radius: 5px;
+        }
+
+        .btn {
+            background-color: #ffd936;
+            border: 1px solid #ffd936;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: 100;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        h6.btn {
+            width: 155px;
+            margin: 0 auto;
+        }
+
+        .service h1 {
+            text-align: center;
+            color: #536942;
+            font-size: 45px;
+            font-weight: 100;
+            letter-spacing: -3px;
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+
+        .service {
+            position: relative;
+
+        }
+
+        .service h1::after {
+            position: absolute;
+            content: "";
+            border-bottom: 3px solid #ffd936;
+            width: 100px;
+            top: 75px;
+            left: 46%;
+        }
+
+        .service_img::after {
+            clear: both;
+            display: table;
+            content: "";
+        }
+
+        .photo1 {
+            float: left;
+            width: 33.33%;
+            text-align: center;
+        }
+
+        .photo1 h2 {
+            margin: 0;
+            font-size: 20px;
+            margin-left: 35px;
+            text-align: left;
+            margin-top: 20px;
+            font-weight: 100;
+            color: #536942;
+        }
+
+        .photo1 p {
+            line-height: 25px;
+            word-spacing: 3px;
+            max-width: 320px;
+            text-align: left;
+            margin-left: 35px;
+            font-weight: 100;
+            color: #536942;
+            margin-bottom: 120px;
+        }
+
+        .jane {
+            background-color: #f6f8f5;
+            text-align: center;
+        }
+
+        .qtext h4 {
+            font-family: 'Forum', cursive;
+            text-transform: none;
+            font-weight: 100;
+            text-align: center;
+            font-size: 34px;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 43px;
+            word-spacing: -1px;
+            color: #536942;
+            padding-top: 35px;
+            padding-bottom: 50px;
+        }
+
+        .img1 img {
+            opacity: 0.4;
+            padding-top: 70px;
+            padding-bottom: -30px;
+            width: 40px;
+        }
+
+        .img2 img {
+            width: 50px;
+        }
+
+        .jname {
+            color: #53694270;
+            padding-bottom: 40px;
+        }
+
+        .aboutustext {
+            float: left;
+            width: 50%;
+
+        }
+
+        .aboutus {
+            padding-top: 76px;
+        }
+
+        .aboutustext p {
+            padding-left: 60px;
+            max-width: 505px;
+            font-weight: 100;
+            color: #536941CC;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+
+        .aboutustext h2 {
+            padding-left: 60px;
+            font-family: 'Forum', cursive;
+            font-weight: 100;
+            font-size: 40px;
+            max-width: 500px;
+            line-height: 44px;
+            color: #536942;
+            letter-spacing: -2px;
+        }
+
+        .aboutustext a {
+            color: #536942;
+            margin-left: 60px;
+            padding: 10px 30px;
+            /* margin-bottom: 50px; */
+            text-decoration: none;
+            border: 1px solid #536942;
+            border-radius: 5px;
+        }
+
+        .aboutus::after {
+            display: table;
+            clear: both;
+            content: "";
+        }
+
+        .aboutusimg {
+            float: left;
+            width: 50%;
+            padding-left: 140px;
+        }
+
+        .query {
+            margin: 0;
+            margin-top: 75px;
+            padding-bottom: 150px;
+            background-image: url(./Nature_img/footer-hero-big.jpg);
+            background-size: cover;
+        }
+
+        .query h1 {
+            margin: 0;
+            padding-top: 100px;
+            font-weight: 400;
+            font-family: 'DM Sans', sans-serif;
+            text-align: center;
+            font-size: 58px;
+            letter-spacing: -2px;
+            color: #536942;
+        }
+
+        .query p {
+            color: #536941CC;
+            text-transform: none;
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto;
+            line-height: 30px;
+            word-spacing: -1px;
+            padding-top: 15px;
+            padding-bottom: 55px;
+        }
+
+        .query a {
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            background-color: #ffd936;
+            margin: 0;
+            margin-left: 500px;
+            padding: 15px 30px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #fff;
+            position: relative;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .footer ul {
+            margin: 0;
+            padding-top: 10px;
+        }
+
+        .footer ul li {
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            margin: 0px 10px;
+            color: #536942;
+        }
+
+        .footer p {
+            text-align: right;
+            margin-right: 50px;
+            color: #536942;
+            position: absolute;
+            top: 20px;
+            right: 45px;
+
+        }
+
+        .footer ul {
+            float: left;
+
+        }
+
+        .footer img {
+            float: left;
+            width: 60px;
+            margin-left: 225px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="navigation">
+                <div class="logo">
+                    <img src="Nature_img/logo-white.svg" alt="" width="60px" height="50px">
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="./NatureHomepage.html">Home</a></li>
+                        <li><a href="./NatureAboutUs.html">About</a></li>
+                        <li><a href="./NatureServices.html">Service</a></li>
+                        <li><a href="./NatureContact.html">Contact</a></li>
+                        <li style="margin-right: 20px;"><a href="" class="number">202-505-0188</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>we all Love</h2>
+            <h1>nature</h1>
+            <p>Look deep into nature, and you will
+                understand everything better.</p>
+            <h6 class="btn"><a href="">Get Started</a></h6>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="service">
+            <h1>Our Services</h1>
+        </div>
+        <div class="service_img">
+            <div class="photo1">
+                <img src="Nature_img/service-1.jpg" alt="" width="343px" height="464px">
+                <h2>Web Design</h2>
+                <p>Focus on how you can help and benefit your user. Use
+                    simple words so that you don't confuse people.</p>
+            </div>
+
+            <div class="photo1">
+                <img src="Nature_img/service-2.jpg" alt="" width="343px" height="464px">
+                <h2>Graphic Design</h2>
+                <p>Focus on how you can help and benefit your user. Use
+                    simple words so that you don't confuse people.
+                </p>
+            </div>
+
+            <div class="photo1">
+                <img src="Nature_img/service-3.jpg" alt="" width="343px" height="464px">
+                <h2>Content Creation</h2>
+                <p>Focus on how you can help and benefit your user. Use
+                    simple words so that you don't confuse people.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="jane">
+        <div class="img1">
+            <img src="./Nature_img/quotes.svg" alt="">
+        </div>
+        <div class="qtext">
+            <h4>
+                <q>Original and with an innate understanding of their customer’s needs, the team
+                    at Love Nature are always a pleasure to work with.</q>
+            </h4>
+        </div>
+        <div class="img2">
+            <img src="./Nature_img/avatar_on_home.png" alt="">
+        </div>
+        <div class="jname">
+            <p>Jane Miller</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="aboutus">
+            <div class="aboutustext">
+                <p>ABOUT US</p>
+                <h2>
+                    Tell website visitors who you are and why they should choose your business.
+                </h2>
+                <p style="padding-bottom: 35px;">
+                    Because when a visitor first lands on your website, you’re a stranger to them.
+                    They have to get to know you in order to want to read your blog posts, subscribe
+                    to your email newsletter, or buy what you’re selling.
+                </p>
+                <a href="">
+                    Find Out More
+                </a>
+            </div>
+            <div class="aboutusimg">
+                <img src="./Nature_img/leaf.jpg" alt="" width="404" height="490">
+            </div>
+        </div>
+    </div>
+
+    <div class="query">
+        <div class="container">
+            <h1>QUESTIONS?</h1>
+            <p>Whether you’re curious about features, a free trial, or even press, we’re here to
+                answer any questions.</p>
+            <a href="">Let's Talk Now</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="footer">
+            <ul>
+                <li><a href="">
+                        Home
+                    </a></li>
+
+                <li><a href="">
+                        About
+                    </a></li>
+
+                <li><a href="">
+                        Services
+                    </a></li>
+
+                <li><a href="">
+                        Contact
+                    </a></li>
+            </ul>
+
+            <img src="./Nature_img/logo-green.svg" alt="">
+            <p>Love Nature by Tyler Moore</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
